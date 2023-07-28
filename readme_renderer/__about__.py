@@ -35,4 +35,4 @@ __author__ = "The Python Packaging Authority"
 __email__ = "admin@mail.pypi.org"
 
 __license__ = "Apache License, Version 2.0"
-__copyright__ = "Copyright 2014 %s" % __author__
+__copyright__ = f"Copyright 2014 {__author__}"

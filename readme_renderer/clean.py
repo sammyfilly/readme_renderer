@@ -126,7 +126,6 @@ def clean(
         ],
     )
     try:
-        cleaned = cleaner.clean(html)
-        return cleaned
+        return cleaner.clean(html)
     except ValueError:
         return None
