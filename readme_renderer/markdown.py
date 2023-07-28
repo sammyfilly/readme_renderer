@@ -71,8 +71,7 @@ def render(
         return None
 
     highlighted = _highlight(rendered)
-    cleaned = clean(highlighted)
-    return cleaned
+    return clean(highlighted)
 
 
 def _highlight(html: str) -> str:

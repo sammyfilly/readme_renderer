@@ -22,10 +22,7 @@ with open(base_dir.joinpath("readme_renderer", "__about__.py")) as f:
     about = {}
     exec(f.read(), about)
 
-with open(base_dir.joinpath("README.rst")) as f:
-    long_description = f.read()
-
-
+long_description = pathlib.Path(base_dir.joinpath("README.rst")).read_text()
 setuptools.setup(
     name=about["__title__"],
     version=about["__version__"],
